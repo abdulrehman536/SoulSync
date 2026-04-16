@@ -1,0 +1,74 @@
+.search-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.user-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.user-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+}
+
+.user-card p {
+  color: #4b5563;
+  margin: 0 0 0.75rem;
+}
+
+.user-card button {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: #ec4899;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-card button:hover {
+  background: #db2777;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
